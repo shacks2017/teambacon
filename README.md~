@@ -26,4 +26,4 @@ rosrun bacon1 bacon_commander
 Keep an eye on the turtlebot and make sure it doesn't bump into anything!
 
 ## Running tests/demos
-Can change standard velocities &c in .cpp file. Be sure to keep velocity relatively low. Note that, because the controller is open loop, the robot may not circumscribe a very precise square. 
+Can change standard velocities &c in .cpp file. Be sure to keep velocity low. Note that, because the controller is open loop, the robot may not circumscribe a very precise square. 
