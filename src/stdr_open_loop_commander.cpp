@@ -4,10 +4,10 @@
 int main(int argc, char **argv) {
     ros::init(argc, argv, "stdr_commander"); 
     ros::NodeHandle n; // two lines to create a publisher object that can talk to ROS
-    ros::Publisher twist_commander = n.advertise<geometry_msgs::Twist>("/robot0/cmd_vel", 1);
+    ros::Publisher twist_commander = n.advertise<geometry_msgs::Twist>("/cmd_vel", 1);
     //some "magic numbers"
     double sample_dt = 0.01; //specify a sample period of 10ms  
-    double speed = 1.0; // 1m/s speed command
+    double speed = 0.4; // 0.4 m/s speed command - adjusted from original program
     double yaw_rate = 0.5; //0.5 rad/sec yaw rate command
     double time_3_sec = 3.0; // should move 3 meters or 1.5 rad in 3 seconds
     
