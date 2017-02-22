@@ -39,3 +39,7 @@ rosrun bacon1 bacon_lidar
 rosrun bacon1 bacon_reactive
 
 bacon_reactive must be used because it publishes to the topic /cmd_vel, rather than the topic /robot0/cmd_vel (as would be required for STDR).
+
+## PS3: Path Server
+rosrun bacon1 bacon_path_service &
+rosrun bacon1 bacon_path client
