@@ -1,0 +1,9 @@
+<launch>
+<node name="my_mobot_pub_des_state" pkg="my_mobot" type="my_mobot_pub_des_state"/>
+<node name="lin_steering_wrt_odom" pkg="lin_steering" type="lin_steering_wrt_odom"/>
+<node name="my_mobot_lidar_alarm" pkg="my_mobot" type="my_mobot_lidar_alarm"/>	
+<node name="my_mobot_lidar_detecting" pkg="my_mobot" type="my_mobot_lidar_detecting"/>	
+<node name="glennan2_client" pkg="kvc2_amcl_steering" type="glennan2_client"/>	
+
+
+</launch>

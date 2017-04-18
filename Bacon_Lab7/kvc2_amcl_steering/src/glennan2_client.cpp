@@ -9,6 +9,7 @@
 #include <geometry_msgs/Pose.h>
 #include <geometry_msgs/PoseStamped.h>
 using namespace std;
+const double PI=3.14159;
 
 geometry_msgs::Quaternion convertPlanarPhi2Quaternion(double phi) {
     geometry_msgs::Quaternion quaternion;
@@ -39,7 +40,7 @@ int main(int argc, char **argv) {
     pose.position.x = 0.0; 
     pose.position.y = 0.0;
     pose.position.z = 0.0; // let's hope so!
-    quat = convertPlanarPhi2Quaternion(0);
+    quat = convertPlanarPhi2Quaternion(0); //jinx faces down the hallway
     pose.orientation = quat;
     pose_stamped.pose = pose;
     path_srv.request.path.poses.push_back(pose_stamped);

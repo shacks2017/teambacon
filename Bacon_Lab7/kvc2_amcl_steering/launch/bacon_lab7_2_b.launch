@@ -1,0 +1,6 @@
+<launch>
+
+<node name="glennan2_client" pkg="kvc2_amcl_steering" type="glennan2_client"/>	
+
+
+</launch>
