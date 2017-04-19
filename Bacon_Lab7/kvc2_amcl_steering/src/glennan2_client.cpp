@@ -46,13 +46,13 @@ int main(int argc, char **argv) {
     path_srv.request.path.poses.push_back(pose_stamped);
 
     pose.position.x = 0;
-    pose.position.y = -32.0;
+    pose.position.y = -25; //decreasing so Jinx doesn't try to go past the end of the hallway
     pose_stamped.pose = pose;
     path_srv.request.path.poses.push_back(pose_stamped);
 
-    pose.position.x = -1.5;
-    pose_stamped.pose = pose;
-    path_srv.request.path.poses.push_back(pose_stamped);
+    //pose.position.x = -1.5;
+    //pose_stamped.pose = pose;
+    //path_srv.request.path.poses.push_back(pose_stamped);
  
     pose.position.x = 0.0;
     pose_stamped.pose = pose;
